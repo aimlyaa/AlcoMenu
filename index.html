@@ -39,8 +39,8 @@
                     </div>
                     <div class="alco-about">      <!-- описание продукта -->
                         <h2>
-                            Описание 
                             <button class="full-scr"><img class="fscr" src="static/media/index/full-scr.png"></button><!-- кнопка фулскрина описания-->
+                                Описание 
                         </h2>
                         <h3>
                                 Глинтвейн — это очень вкусный алкогольный горячий напиток, основой которого является красное вино, 
@@ -68,7 +68,7 @@
                     </div>
                     <div class="alco-about">
                         <h2>
-                            Описание 
+                            Описание
                             <button class="full-scr"><img class="fscr" src="static/media/index/full-scr.png"></button>
                         </h2>
                         <h3>
@@ -87,7 +87,32 @@
                 </div>
             </div>
         </div>
-        <div class="menu-filter">
+        <div class="menu-filter text-center">
+            <form style = "margin-top: 10vh;">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"><h1>Производитель</h1></label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Сар пив ком</option>
+                        <option>Неизвестно</option>
+                        <option>Вариант</option>
+                        <option>Еще один</option>
+                        <option>кароче через цикл должны генериться</option>
+                    </select>
+                    <label for="exampleFormControlSelect1"><h1>Тип и т.п</h1></label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Сухое</option>
+                        <option>Сладкое</option>
+                        <option>Красное</option>
+                        <option>Еще один</option>
+                        <option>кароче через цикл должны генериться</option>
+                    </select>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"><p>Есть в наличии</p></label>
+                </div>
+                <button type="submit" class="btn btn-primary"><h3>Показать</h3></button>
+            </form>
         </div>
     </body>
     <!-- Optional JavaScript -->

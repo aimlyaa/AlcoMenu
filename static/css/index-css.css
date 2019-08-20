@@ -143,6 +143,15 @@ body{
     font-size: 3vh;
     padding: 10%;
 }
+.form-check-input{
+    width: 3vh; 
+    height: 3vh;
+    margin-top: 1.653vh;
+    margin-left: -3vw;
+}
+.form-check-label p{
+    font-size: 4vh;
+}
 
 .menu { /* фон меню */
     background: #343a40;

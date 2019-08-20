@@ -144,13 +144,57 @@ $("#full-cat").click(function(){
     if (!catalogShowed){
         $(".menu-catalog").show();
         $(".menu-catalog").animate({height:"101%"});
+        setTimeout(function(){$(".swiper-container").hide();}, 400);
+        $(".menu-filter").animate({height:"0%"});
+        setTimeout(function(){$(".menu-filter").hide();}, 400);
+        $(".swiper-container").animate({height:"0%"});
+        $(".menu").animate({width:"0"});
+        $(".menu").animate({marginTop:"-100vh"});
+        setTimeout(function(){$(".menu").hide();}, 300);
+        $(".menu-left-side").animate({width:"0%",height:"0%"});
+        $(".menu-left-side").animate({marginTop:"-100vh"});
+        setTimeout(function(){$(".menu-left-side").hide();}, 300);
+        $(".menu-button").animate({marginTop:"-99vh"});
+        filterParamsShowed = false;
+        menuShowed = false;
         catalogShowed = true;
+    }
+    else{
+        $(".menu-filter").animate({height:"0%"});
+        setTimeout(function(){$(".menu-filter").hide();}, 400);
+        $(".menu").animate({width:"0"});
+        setTimeout(function(){$(".menu").hide();}, 400);
+        $(".menu-left-side").animate({width:"0%",height:"0%"});
+        setTimeout(function(){$(".menu-left-side").hide();}, 400);
+        menuShowed = false;
     }
 });
 $("#sort-params").click(function(){
     if (!filterParamsShowed){
+        if (catalogShowed){
+            $(".menu-button").animate({marginTop:"1vh"});
+            $(".menu").animate({marginTop:"0vh",width:"0"});
+            $(".menu-left-side").animate({marginTop:"0vh",width:"0%",height:"0%"});
+        }
+        else{
+            $(".menu").animate({width:"0"});
+            $(".menu-left-side").animate({width:"0%",height:"0%"});
+            setTimeout(function(){$(".menu").hide();}, 400);
+            setTimeout(function(){$(".menu-left-side").hide();}, 400);
+            menuShowed = false;    
+        }
         $(".menu-filter").show();
-        $(".menu-filter").animate({height:"101%"});
+        $(".menu-filter").animate({height:"100vh"})
+        $(".menu-catalog").animate({height:"0%"});
+        setTimeout(function(){$(".menu-catalog").hide();}, 400);
+        setTimeout(function(){$(".swiper-container").hide();}, 400);
+        $(".swiper-container").animate({height:"0%"})
+        $(".menu").animate({height:"0"});
+        $(".menu-left-side").animate({height:"0%"});
+        setTimeout(function(){$(".menu").hide();}, 300);
+        setTimeout(function(){$(".menu-left-side").hide();}, 300);
+        menuShowed = false;
         filterParamsShowed = true;
+        catalogShowed = false;
     }
 });
