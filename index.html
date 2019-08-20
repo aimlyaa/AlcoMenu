@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Алкоменю</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <!-- My Css -->
+        <link rel="stylesheet" href="static/css/index-css.css">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <!--Swiper-->
+        <link rel="stylesheet" href="static/css/swiper.min.css">
+    </head>
+    <body>
+        <div class="menu-catalog">
+        </div>
+        <!--menu-->
+        <button class="menu-button"><img src="static/media/index/menu.png"></button><!-- кнопка меню-->
+        <div class = "menu"></div> <!--бекграунд меню-->
+        <div class = "menu-left-side"> <!--меню слева-->
+                <button type="button" class="btn btn-success btn-menu" id = "full-cat">Полный каталог</button><br>
+                <button type="button" class="btn btn-primary btn-menu" id = "sort-params">Сортировка по параметрам</button>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-hash="1">
+                    <div class="alco-photo">       <!-- Рамка фотографии -->
+                        <button class="close-button"><img src="static/media/index/close.png"></button><!-- кнопка антифулскрина фото-->
+                        <img src="static/media/wines/001.jpg"> <!-- Фото продукта -->
+                    </div>
+                    <div class="alco-title">       <!-- Название продукта -->
+                        <h1><b>Глинтвейн</b></h1>
+                    </div>
+                    <div class="alco-about">      <!-- описание продукта -->
+                        <h2>
+                            Описание 
+                            <button class="full-scr"><img class="fscr" src="static/media/index/full-scr.png"></button><!-- кнопка фулскрина описания-->
+                        </h2>
+                        <h3>
+                                Глинтвейн — это очень вкусный алкогольный горячий напиток, основой которого является красное вино, 
+                                нагретое до 50-60 °С, с добавлением сахара и пряностей. Глинтвейн Glühwein изготавливается из натуральных 
+                                ингредиентов по классическому немецкому рецепту. Его аромат яркий, с оттенками специй. Во вкусе чувствуются 
+                                тона корицы, гвоздики, апельсина и имбиря. Этот прекрасный напиток можно пить как в горячем, так и в холодном 
+                                виде. Он просто создан для самых теплых встреч! Рекомендуется подавать с печеньем и пирожными.    
+                        </h3>
+                        <p><h1>Страна: <h4>Испания</h4></h1></p>          
+                        <h1>Цвет: <h4>Белое</h4></h1> 
+                        <h1>Объем: <h4>0.75л</h4></h1>
+                        <h1>Алкоголь: <h4>13%</h4></h1> 
+                        <h1>Температура подачи: <h4>10</h4></h1> 
+                        <h1>Производитель: <h4>Bodegas Naia</h4></h1>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-hash="2">
+                    <div class="alco-photo">      
+                        <button class="close-button"><img src="static/media/index/close.png"></button>
+                        <img  src="static/media/wines/002.jpg">
+                    </div>
+
+                    <div class="alco-title">
+                        <h1><b>Вино 1605 Вердехо DO бел.сух</b></h1>
+                    </div>
+                    <div class="alco-about">
+                        <h2>
+                            Описание 
+                            <button class="full-scr"><img class="fscr" src="static/media/index/full-scr.png"></button>
+                        </h2>
+                        <h3>
+                                Очень соблазнительное вино из испанского региона Руэда. Изготовлено из винограда сортов Вердехо (85%) и Совиньон Блан (15%). 
+                                Обладает весьма уникальным характером, отличительной чертой которого является аромат тропических белых фруктов, с легким оттенком фенхеля и свежей травы. 
+                                Завершается прозрачным и приятным послевкусием. Идеально сочетается с рыбой на гриле, молодым картофелем или креветками в чесночном соусе. 
+                                Перед подачей лучше охладить примерно до +10-12 °С. Попробуйте! Это будет освежающий восторг!
+                        </h3>
+                        <p><h1>Страна: <h4>Испания</h4></h1></p>          
+                        <h1>Цвет: <h4>Белое</h4></h1> 
+                        <h1>Объем: <h4>0.75л</h4></h1>
+                        <h1>Алкоголь: <h4>13%</h4></h1> 
+                        <h1>Температура подачи: <h4>10</h4></h1> 
+                        <h1>Производитель: <h4>Bodegas Naia</h4></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-filter">
+        </div>
+    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- touchSwipe for a mobile touch and swipe  -->
+    <script src="static/js/jquery.touchSwipe.min.js"></script>
+    <!-- Обработчик события свайпа  -->
+    <script src="static/js/swiper.min.js"></script>
+    <!--Custom jquery (ne smotret`, tam pzdts)-->
+    <script src="static/js/custom.js"></script>
+</html>

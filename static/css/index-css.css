@@ -1,0 +1,209 @@
+::-webkit-scrollbar { /* Убирает скроллбар */
+    display: none;
+}
+h1{
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-size: 5vh;
+    padding: 0%;
+    text-align: center;
+}
+h2{
+    border-bottom: 2px solid #7f7f7f;
+    color: #ffffff;
+    font-size: 5vh;
+    padding: 0%; 
+    text-align: center; 
+}
+h3{
+    color: #ffffff;
+    font-size: 4vh;
+    padding: 2%; 
+    text-align: justify; 
+}
+h4{
+    color: #ffffff;
+    font-size: 5vh;
+    padding: 2%; 
+    text-align: center; 
+}
+
+.alco-about{ /* Описание продукта */
+    align-items: center;
+    background: #343a40;
+    border: 2px solid #7f7f7f;
+    border-radius: 11px;
+    display: block;
+    height: 5vh;
+    float: right;
+    margin-top: 2vh;
+    margin-right: 1vw;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0%;
+    width: 56.5vw;
+}
+.alco-about h1{ /* Шрифт Описание продукта */
+    border-top: 1px solid #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 3vh;
+}
+
+.alco-photo{ /* Фото продукта */
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #7f7f7f;
+    border-radius: 11px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    height: 95vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    overflow: hidden;
+    position: relative;
+    width: 40vw;
+}
+
+.alco-photo img{
+    max-width:100%;
+    height:100%;
+    object-fit: contain; 
+}
+
+.alco-title{ /* Название продукта */
+    align-items: center;
+    border: 2px solid #7f7f7f;
+    background: #343a40;
+    border-radius: 11px;
+    display: flex;
+    float: right;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-right: 1vw;
+    overflow: hidden;
+    padding: 0%;
+    width: 56.5vw;
+}
+
+body{
+    color: #ffffff;
+    height: 99vh;
+    font-family: 'Caveat', cursive;
+}
+
+.full-scr{ /* Кнопка фулскрина описания */
+    align-items: center;
+    display: flex;
+    float: right;
+    justify-content: center;
+    height: 5.9vh;
+    position: relative;
+    margin-right: 1vh;
+    width: 5.9vh;
+    background:#343a40;
+    border:none;
+}
+.full-scr img{
+    height: 5.9vh;
+    position: absolute;
+    width: 5.9vh;
+}
+.catalog{
+    height: 100vh;
+    width: 100vw;
+}
+
+.close-button{ /* Кнопка отмены фулскрина фото товара */
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    align-items: center;
+    display: flex;
+    float: right;
+    justify-content: center;
+    height: 4vh;
+    margin-top: -45vh;
+    margin-left: 45vw;
+    position: absolute;
+    width: 4vh;
+}
+.close-button img{
+    height: 4vh;
+    position: absolute;
+    width: 4vh;
+}
+.btn-menu{ /* кнопки в меню */
+    margin-top:7vh;
+    margin-left: 2.4vw;
+    width: 45vw;
+    font-size: 3vh;
+    padding: 10%;
+}
+
+.menu { /* фон меню */
+    background: #343a40;
+    border: 2px solid #ffffff;
+    border-radius: 11px;
+    position: absolute;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: 9998;
+}
+.menu-left-side { /* меню слева */
+    background: #343a40;
+    border: 2px solid #ffffff;
+    border-radius: 11px;
+    position: absolute;
+    opacity: 1;
+    z-index: 9998;
+}
+
+.menu-catalog{
+    background: #343a40;
+    border: 2px solid #ffffff;
+    border-radius: 11px;
+    width: 100vw;
+}
+.menu-filter{
+    background: #343a40;
+    border: 2px solid #ffffff;
+    border-radius: 11px;
+    width: 100vw;
+}
+.menu-button { /* кнопка "меню"*/
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    align-items: center;
+    display: flex;
+    float: right;
+    justify-content: center;
+    height: 5.25vh;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    position: absolute;
+    width: 5.25vh;
+    z-index: 9999;
+}
+.menu-button img{
+    height: 5.25vh;
+    position: absolute;
+    width: 5.25vh;
+}
+.swiper-container { /* слайдер */
+    background: #343a40;
+    border: 2px solid #ffffff;
+    border-radius: 11px;
+    width: 100vw;
+    height: 99.9vh;
+}
+.swiper-slide {
+    background: #343a40;
+}
