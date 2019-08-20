@@ -1,6 +1,8 @@
-::-webkit-scrollbar { /* Убирает скроллбар */
+/* Убирает скроллбар */
+::-webkit-scrollbar { 
     display: none;
 }
+/* шрифты */
 h1{
     border-bottom: 1px solid #fff;
     color: #ffffff;
@@ -28,7 +30,8 @@ h4{
     text-align: center; 
 }
 
-.alco-about{ /* Описание продукта */
+/* Описание продукта */
+.alco-about{ 
     align-items: center;
     background: #343a40;
     border: 2px solid #7f7f7f;
@@ -43,13 +46,16 @@ h4{
     padding: 0%;
     width: 56.5vw;
 }
-.alco-about h1{ /* Шрифт Описание продукта */
+
+/* Шрифт Описание продукта */
+.alco-about h1{ 
     border-top: 1px solid #fff;
     font-family: 'Lobster', cursive;
     font-size: 3vh;
 }
 
-.alco-photo{ /* Фото продукта */
+/* Фото продукта */
+.alco-photo{ 
     align-items: center;
     background: #ffffff;
     border: 2px solid #7f7f7f;
@@ -71,7 +77,8 @@ h4{
     object-fit: contain; 
 }
 
-.alco-title{ /* Название продукта */
+/* Название продукта */
+.alco-title{ 
     align-items: center;
     border: 2px solid #7f7f7f;
     background: #343a40;
@@ -86,13 +93,15 @@ h4{
     width: 56.5vw;
 }
 
+/* Тело страницы */
 body{
     color: #ffffff;
     height: 99vh;
     font-family: 'Caveat', cursive;
 }
 
-.full-scr{ /* Кнопка фулскрина описания */
+/* Кнопка фулскрина описания */
+.full-scr{ 
     align-items: center;
     display: flex;
     float: right;
@@ -109,12 +118,9 @@ body{
     position: absolute;
     width: 5.9vh;
 }
-.catalog{
-    height: 100vh;
-    width: 100vw;
-}
 
-.close-button{ /* Кнопка отмены фулскрина фото товара */
+/* Кнопка отмены фулскрина фото товара */
+.close-button{ 
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -136,24 +142,30 @@ body{
     position: absolute;
     width: 4vh;
 }
-.btn-menu{ /* кнопки в меню */
-    margin-top:7vh;
+
+/* кнопки в меню */
+.btn-menu{ 
+    margin-top:16.15vh;
     margin-left: 2.4vw;
     width: 45vw;
     font-size: 3vh;
     padding: 10%;
+    margin-bottom:1vh;
 }
+/* кастомный чек-бокс в фильтре */
 .form-check-input{
     width: 3vh; 
     height: 3vh;
     margin-top: 1.653vh;
-    margin-left: -3vw;
+    margin-left: -4vh;
 }
+/* кастомный текст в фильтре */
 .form-check-label p{
     font-size: 4vh;
 }
 
-.menu { /* фон меню */
+/* фон меню */
+.menu { 
     background: #343a40;
     border: 2px solid #ffffff;
     border-radius: 11px;
@@ -162,7 +174,9 @@ body{
     opacity: 0.9;
     z-index: 9998;
 }
-.menu-left-side { /* меню слева */
+
+/* меню слева */
+.menu-left-side { 
     background: #343a40;
     border: 2px solid #ffffff;
     border-radius: 11px;
@@ -171,19 +185,24 @@ body{
     z-index: 9998;
 }
 
+/* Блок каталого вина */
 .menu-catalog{
     background: #343a40;
     border: 2px solid #ffffff;
     border-radius: 11px;
     width: 100vw;
 }
+
+/* блок фильтра */
 .menu-filter{
     background: #343a40;
     border: 2px solid #ffffff;
     border-radius: 11px;
     width: 100vw;
 }
-.menu-button { /* кнопка "меню"*/
+
+/* кнопка "меню"*/
+.menu-button { 
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -206,13 +225,60 @@ body{
     position: absolute;
     width: 5.25vh;
 }
-.swiper-container { /* слайдер */
+
+/* слайдеры */
+.swiper-container { 
     background: #343a40;
     border: 2px solid #ffffff;
     border-radius: 11px;
     width: 100vw;
     height: 99.9vh;
 }
+
+/* слайд */
 .swiper-slide {
     background: #343a40;
+}
+
+/* слайдеры каталога*/
+.catalog-swiper-container {
+    overflow: hidden;
+    background: #343a40;
+    border: 2px solid #ffffff;
+    border-radius: 11px;
+    width: 100vw;
+    height: 0vh;
+    margin-left: -0.1vw;
+    margin-top: -0.1vw;
+  }
+
+  /* слайд каталога */
+  .catalog-swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 11px;
+    height: 40vh;
+    margin-top:5vh;
+    padding: 0;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.catalog-swiper-container img {
+    max-width:100%;
+    height:100%;
+    object-fit: contain; 
 }
