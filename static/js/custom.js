@@ -12,6 +12,7 @@ let selected = [];
 		longSwipesRatio:0.2,
 		longSwipesMs:50,
 		initialSlide:1,
+		centeredSlides: true,
     });
     var swiperV = new Swiper('.swiper-container-v', {
         direction: 'horizontal',
@@ -23,6 +24,7 @@ let selected = [];
 		shortSwipes:false,
 		longSwipesRatio:0.2,
 		longSwipesMs:50,
+		centeredSlides: true,
 		on: {
 		slideChange: function () {
 			setTimeout(sync_slide, 1,this.activeIndex);
@@ -39,6 +41,7 @@ let selected = [];
 	shortSwipes:false,
 	longSwipesRatio:0.2,
 	longSwipesMs:50,
+	centeredSlides: true,
 	on: {
 	slideChange: function () {
 		    setTimeout(sync_slide, 1,this.activeIndex);
@@ -53,7 +56,9 @@ let selected = [];
 		preloadImages: false,
 		lazy: true,
 		slidesPerColumn: 2,
-		spaceBetween: 30,
+		spaceBetween: 0,
+		centeredSlides: true,
+		initialSlide:1,
 		on: {
 		click: function () {
 			sync_slide(this.clickedIndex);
@@ -119,12 +124,19 @@ function sync_slide(new_slide){
 	
 };
 //Анимация развертки и свертки фотографии
+$( window ).click(function(){
+    if (imageFullscreen){
+		$(".alco-photo").animate({width: "40vw"});
+        setTimeout(function(){$(".alco-par").animate({opacity:"1"});}, 200);
+        setTimeout(function(){imageFullscreen = false;}, 100);
+    }
+});
 $(".alco-photo").click(function(){
     if (!imageFullscreen){
-        setTimeout(function(){$(".alco-photo").animate({width: "98%"});}, 200);
+        setTimeout(function(){$(".alco-photo").animate({width: "100vw"});}, 200);
 		$(".alco-par").animate({opacity:"0"});
 		$(".alco-about").animate({opacity:"1"});
-        imageFullscreen = true;
+        setTimeout(function(){imageFullscreen = true;}, 100);
     }
     else{
         $(".alco-photo").animate({width: "40vw"});
