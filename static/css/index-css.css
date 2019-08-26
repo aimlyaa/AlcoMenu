@@ -1,16 +1,21 @@
+/* убираем скроллбар */
 ::-webkit-scrollbar { 
 	display: none;
 }
+/* весь курсив другим шрифтом */
 i{
 	font-family: 'Pacifico', cursive;
 }
+/* дефолтный шрифт */
 body{
 	font-family: 'Open Sans', sans-serif;
 }
+/* дефолт для каждого слайдера */
 .white-bordered{
 	background:#faf9f7;
 	box-shadow:0px 0px 0px 5px white inset;
 }
+/* Параметры вина */
 .alco-par{ 
 	text-align: center;
 	background:#faf9f7;
@@ -20,6 +25,7 @@ body{
     overflow: hidden;
     width: 100%;
 }
+/* Описание вина */
 .alco-about{
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -28,20 +34,17 @@ body{
     display: block;
     overflow: hidden;
 }
+/* Специальный hr для описания */
 .alco-about hr{
 	width:90%;
 	background:#a18a72;
 }
-.alignleft {
-	float: left;
-	font-size: 2vh;
-	margin-left:5%;
-	margin-bottom:0;
-}
+/* Кнопка на форме фильтрации */
 .btn-filter{
 	background:#f1e5ce;
 	font-size:4vh;
 }
+/* Стиль для цены */
 .price {
 	margin-top:-1vh;
 	text-align:center;
@@ -49,13 +52,7 @@ body{
 	width:100%;
 	margin-bottom:0;
 }
-.alignright {
-	text-align:center;
-	font-size: 2vh;
-	float: right;
-	margin-right:5%;
-	margin-bottom:0;
-}
+/* Специальный hr для параметров вина*/
 .alco-par hr{
 	width:90%;
 	background:#a18a72;
@@ -83,6 +80,11 @@ body{
 }
 
 /* слайд каталога */
+.swiper-container-v{
+	overflow: hidden;
+    background: #fff;
+    height: 99.9vh;
+}
 .catalog-swiper-container-v .swiper-slide {
     background: #fff;
     height: 40vh;
@@ -95,9 +97,4 @@ body{
 	font-size: 1.5vh;
 	color:#082948;
 	z-index:9999;
-}
-.swiper-container-v{
-	overflow: hidden;
-    background: #fff;
-    height: 99.9vh;
 }

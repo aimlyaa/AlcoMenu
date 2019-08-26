@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Upwine Алкоменю</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/index-css.css">
+		<link rel="stylesheet" href="static/css/bootstrap-slider.min.css">       
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="static/css/swiper.min.css">   
+    </head>
+    <body class="bg-white" style="height: 100vh;">
+		<div class="swiper-container h-100 m-0 swiper-container-h">
+			<div class="swiper-wrapper m-0 white-bordered">
+				<div class="swiper-slide container w-100 h-100">
+					<div class="row col-12 justify-content-center ml-0 pt-4 pb-0">
+						<div class="alco-about w-100">
+							<form>
+								<div class="form-group" style="font-size:3vh;margin-top:5vh;">
+									<select class="form-control mb-1" style="font-size:3vh;" id="exampleFormControlSelect1">
+										<option>Цвет</option>
+										<option>Белое</option>
+										<option>Красное</option>
+										<option>Розовое</option>
+									</select>
+									<label for="exampleFormControlSelect1">Цена</label><br>
+									<label for="exampleFormControlSelect1" style="font-size:2vh; ">640 ₽  </label>
+									<input id="ex2" type="text" class="span2 swiper-no-swiping" style="width:45vw;" value="" data-slider-min="640" data-slider-max="32000" data-slider-step="50" data-slider-value="[640,32000]"/>
+									<label for="exampleFormControlSelect1" style="font-size:2vh;">   32000 ₽</label><br>
+									<div style="margin-top:-3vh;">
+										<span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-3vh;">От: <span id="ex2SliderVal">640</span> ₽</span>
+										<span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-1vh;">До: <span id="ex2SliderVal2">32000</span> ₽</span>
+									</div>
+									<br>
+									<select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect2">
+										<option>Тип вина</option>
+										<option>Тихое</option>
+										<option>Игристое</option>
+										<option>Крепленое</option>
+										<option>Шипучее</option>
+									</select>
+									<select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect3">
+										<option>Cахар</option>
+										<option>Полусладкое</option>
+										<option>Полусухое</option>
+										<option>Сухое</option>
+										<option>Игристое</option>
+									</select>
+									<select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect4">
+										<option>Страна</option>
+										<option>Австралия</option>
+										<option>Аргентина</option>
+										<option>Армения</option>
+										<option>Германия</option>
+										<option>Грузия</option>
+										<option>Израиль</option>
+										<option>Индия</option>
+										<option>Испания</option>
+										<option>Люксембург</option>
+										<option>Новая Зеландия</option>
+										<option>Португалия</option>
+										<option>Россия</option>
+										<option>Сербия</option>
+										<option>США</option>
+										<option>Уругвай</option>
+										<option>Франция</option>
+										<option>Чили</option>
+										<option>ЮАР</option>
+									</select>
+									<select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect5">
+										<option>Виноградство</option>
+										<option>Биодинамика</option>
+										<option>Органика</option>
+										<option>Традиционное</option>
+									</select>
+									<select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect6">
+										<option>Регион</option>
+										<option>Абруццо</option>
+										<option>Альто Адидже</option>
+										<option>Базиликата</option>
+										<option>Валле-Д'Аоста</option>
+										<option>Верментино ди Сардиния</option>
+										<option>Калабрия</option>
+										<option>Кампания</option>
+										<option>Лацио</option>
+										<option>Лигурия</option>
+										<option>Ломбардия</option>
+										<option>Марке</option>
+										<option>Пулия</option>
+										<option>Пьемонт</option>
+										<option>Сардиния</option>
+										<option>Сицилия</option>
+										<option>Тоскана</option>
+										<option>Трентино-Альто-Адидже</option>
+										<option>Умбрия</option>
+										<option>Фриули</option>
+										<option>Фриули-Венеция Джулия</option>
+										<option>Эмилия-Романья</option>
+									</select>
+									<select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect7">
+										<option>Рейтинговые агенства</option>
+										<option>A La Carte</option>
+										<option>Antonio Galloni</option>
+										<option>Bettane&amp;Desseauve</option>
+										<option>Concours Mondial	1</option>
+										<option>Concours Mondial</option>
+										<option>Decanter World Wine Awards</option>
+										<option>Decanter World Wine Awards</option>
+										<option>Descorchados</option>
+										<option>Falstaff</option>
+										<option>Gault & Millau</option>
+										<option>Gilbert & Gaillard</option>
+										<option>Guía Peñín</option>
+										<option>International Wine Challenge</option>
+										<option>J.Robinson</option>
+										<option>James Suckling</option>
+										<option>Jamie Goode</option>
+										<option>John Platter Guide</option>
+										<option>L'espresso</option>
+										<option>La Revue de Vin de France</option>
+										<option>Robert Parker</option>
+										<option>Tim Atkin</option>
+										<option>Vinaria</option>
+										<option>Vinous</option>
+										<option>Vinum Wine Magazin</option>
+										<option>Vivino</option>
+										<option>Whisky Advocate</option>
+										<option>Wine Advocate</option>
+										<option>Wine Enthusaist</option>
+										<option>Wine Spectator</option>
+									</select>
+									<select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect8">
+										<option>Рейтинг от ресторана</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+									</select>
+								</div>
+								<button class="btn btn-primary btn-filter" type="submit">Показать</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="catalog-swiper-container-v h-100 m-0 white-bordered">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<container>
+									<div class="row h-100">
+										<div class="col-12 h-100">
+											<p class="mt-4 mb-0"><b>"Alasia" Barolo DOCG</b></p>
+											<p class="mt-0" style="font-size: 1.5vh; color:#52687d;">Италия <b>0.75</b> л</p>
+											<img src="static/media/wines/001.jpg" class="mw-100 h-50 d-block ml-auto mr-auto" id="1">
+											<p class="mt-3 mb-0" style="font-size: 1.5vh; color:#dc6c75;">КРАСНОЕ СУХОЕ</p>
+											<hr class="d-block ml-auto mr-auto m-1" style="background:#52687d; width:80%;">
+											<p class="price" style="font-size:3vh;"><i>2950 ₽ </i></p>
+										</div>
+									</div>
+								</container>
+							</div>
+							<div class="swiper-slide">
+								<container>
+									<div class="row h-100">
+										<div class="col-12 h-100">
+											<p class="mt-4 mb-0"><b>"Alasia" Barolo DOCG</b></p>
+											<p class="mt-0" style="font-size: 1.5vh; color:#52687d;">Италия <b>0.75</b> л</p>
+											<img src="static/media/wines/002.jpg" class="mw-100 h-50 d-block ml-auto mr-auto" id="1">
+											<p class="mt-3 mb-0" style="font-size: 1.5vh; color:#dc6c75;">КРАСНОЕ СУХОЕ</p>
+											<hr class="d-block ml-auto mr-auto m-1" style="background:#52687d; width:80%;">
+											<p class="price" style="font-size:3vh;"><i>2950 ₽ </i></p>
+										</div>
+									</div>
+								</container>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-container swiper-container-v">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<container>
+									<div class="row h-100 w-100 m-0">
+										<div class="col-5 p-0">
+											<div class="alco-photo m-0">
+												<img src="static/media/wines/002.jpg">
+											</div>
+										</div>
+										<div class="col-7 p-0">
+											<div class="alco-par text-center m-0 pt-4 white-bordered">
+												<container>
+													<div class="row">
+														<div class="col-12">
+															<p style="font-size: 1.5vh; color:#a6a4b0;">Артикул: 11</p>
+															<p style="font-size: 2.5vh"> <b>"Alasia" Barolo DOCG</b></p>
+															<p style="font-size: 1.5vh; color:#a6a4b0;">"Алазия" Бароло</p>
+															<hr>
+															<p class="text-left ml-4 mb-0"><img src="static/media/index/where.png"> Италия <i>0.75</i> л</p>
+															<p class="text-left ml-4 mb-0" style="color:#dc6c75;"><img src="static/media/index/wine.png"> КРАСНОЕ СУХОЕ</p>
+															<hr>
+															<div class="row pl-4 pr-4">
+																<div class="col ml-4 p-0 text-left">
+																	<p style="font-size:2vh;"><b>Вино:</b> </p>
+																	<p style="font-size:2vh;"><b>Тип вина:</b></p>
+																	<p style="font-size:2vh;"><b>Регион: </b></p>
+																	<p style="font-size:2vh;"><b>Производитель: </b></p>
+																	<p style="font-size:2vh;"><b>Состав: </b></p>
+																	<p style="font-size:2vh;"><b>Производство: </b></p>
+																	<p style="font-size:2vh;"><b>Содержание алкоголя: </b></p>
+																</div>
+																<div class="col mr-4 p-0 text-right">
+																	<p style="font-size:2vh;">Красное - сухое</p>
+																	<p style="font-size:2vh;">Тихое</p>
+																	<p style="font-size:2vh;">Пьемонт - Италия</p>
+																	<p style="font-size:2vh;">Araldica Castelvero</p>
+																	<p style="font-size:2vh;">Неббиоло</p>
+																	<p style="font-size:2vh;">Традиционное</p>
+																	<p style="font-size:2vh;">14%</p>
+																</div>
+																<hr>
+																<p class="price"><i>2950 ₽ </i></p>
+															</div>	
+														</div>
+													</div>
+												</container>
+											</div> 			
+										</div>
+									</div>
+								</container>
+							</div>
+							<div class="swiper-slide">
+								<container>
+									<div class="row h-100 w-100 m-0">
+										<div class="col-5 p-0">
+											<div class="alco-photo m-0">
+												<img src="static/media/wines/001.jpg">
+											</div>
+										</div>
+										<div class="col-7 p-0">
+											<div class="alco-par text-center m-0 pt-4 white-bordered">
+												<container>
+													<div class="row">
+														<div class="col-12">
+															<p style="font-size: 1.5vh; color:#a6a4b0;">Артикул: 11</p>
+															<p style="font-size: 2.5vh"> <b>"Alasia" Barolo DOCG</b></p>
+															<p style="font-size: 1.5vh; color:#a6a4b0;">"Алазия" Бароло</p>
+															<hr>
+															<p class="text-left ml-4 mb-0"><img src="static/media/index/where.png"> Италия <i>0.75</i> л</p>
+															<p class="text-left ml-4 mb-0" style="color:#dc6c75;"><img src="static/media/index/wine.png"> КРАСНОЕ СУХОЕ</p>
+															<hr>
+															<div class="row pl-4 pr-4">
+																<div class="col ml-4 p-0 text-left">
+																	<p style="font-size:2vh;"><b>Вино:</b> </p>
+																	<p style="font-size:2vh;"><b>Тип вина:</b></p>
+																	<p style="font-size:2vh;"><b>Регион: </b></p>
+																	<p style="font-size:2vh;"><b>Производитель: </b></p>
+																	<p style="font-size:2vh;"><b>Состав: </b></p>
+																	<p style="font-size:2vh;"><b>Производство: </b></p>
+																	<p style="font-size:2vh;"><b>Содержание алкоголя: </b></p>
+																</div>
+																<div class="col mr-4 p-0 text-right">
+																	<p style="font-size:2vh;">Красное - сухое</p>
+																	<p style="font-size:2vh;">Тихое</p>
+																	<p style="font-size:2vh;">Пьемонт - Италия</p>
+																	<p style="font-size:2vh;">Araldica Castelvero</p>
+																	<p style="font-size:2vh;">Неббиоло</p>
+																	<p style="font-size:2vh;">Традиционное</p>
+																	<p style="font-size:2vh;">14%</p>
+																</div>
+																<hr>
+																<p class="price"><i>2950 ₽ </i></p>
+															</div>	
+														</div>
+													</div>
+												</container>
+											</div> 			
+										</div>
+									</div>
+								</container>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-container h-100 swiper-container-v-about">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="alco-about text-center h-100 white-bordered">  
+									<div style="width:100%;height:2.5vh;"></div>
+									<hr>
+									<p style="font-size: 4.5vh"> <b>Описание</b></p>
+									<hr>
+									<div class="textbox swiper-no-swiping" style="overflow:hidden;overflow-y:scroll;height:80vh;padding:0 5% 5% 5%;text-align:justify;">
+										<p style="font-size: 3.5vh">
+											ОСОБЕННОСТИ
+											"Alasia" Barolo — полнотелое красное сухое вино, созданное из винограда сорта Неббиоло.
+											Бароло обладает сложным ароматом, который сочетает в себе оттенки минералов, дерева, ванили и цветочные нюансы. 
+											Стойкий вкус вина завораживает элегантной шелковистой текстурой, оттенками специй, красных фруктов и долгим, гармоничным послевкусием.  
+											ОРГАНОЛЕПТИКА
+											Вино красно-гранатового цвета.Сложный аромат вина сочетает в себе оттенки минералов, дерева, ванили и цветочные нюансы.
+											Вино обладает стойким вкусом с элегантной шелковистой текстурой, оттенками специй, красных фруктов и долгим, гармоничным послевкусием.
+											СОЧЕТАЕМОСТЬ
+											Вино прекрасно сочетается с выдержанными сырами, красным мясом и дичью.
+											ЛЕГЕНДА
+											Araldica Castelvero— это крупнейший и наиболее прогрессивный кооператив Пьемонта, созданный в 1954 году и на данный момент насчитывающий около 300 членов. 
+											В основном это мелкие владельцы виноградников, которые почти на 1000 га площади выращивают местные белые сорта винограда — Москато и Кортезе, синий сорт 
+											Барбера и международные сорта — Мерло, Каберне Совиньон и Шардоне. Виноградники расположены в нескольких крупных областях Пьемонта, таких как Ланге,
+											Монферрато, Роэро и Гави.
+											ТЕРРУАР/ВИНОГРАДНИК
+											Кооперативу принадлежит винодельня Antica Contea di Сastelvero, самая старая часть которой была построена в 1954 году.
+											Выдержка вин тогда осуществлялась в цементных чанах. В 60-70 годах была проведена их полная замена на емкости из нержавеющей стали и дерева.
+											В 1972–1978 годах компания вкладывает крупные инвестиции в постройку большого погреба для выдержки вин в дубовых бочках общим объемом 15 000 гектолитров
+											. Здесь налаживается выдержка вин линейки "Barbera d'Asti", которая претендовала на почетное звание "лучшей" среди широкого ассортимента вин компании.
+											В 1999 году построен современный склад и завод по розливу вин Araldica. Продолжая свое расширение, компания в 1998 году приобретает поместье "Cascinone" 
+											(102 га земли), расположенное в муниципалитете Генуя, а также "Battistina", находящееся недалеко от города Гави. 
+											В каждой из них были построены собственные подвалы для винификации.
+											Несмотря на то, что компания Аральдика Кастельвероявляется кооперативом, благодаря Клаудио Манера — управляющему директору и энологу компании — здесь прису
+											тствуют "семейные традиции". Его отец, Ливио Манера, был первым виноделом кооператива в пятидесятых годах, а его жена Лелла работает виноделом компании и от
+											вечает за контроль качества выпускаемой продукции. Клаудио руководствуется принципом, что инвестиции в виноградники имеют решающее значение для создания каче
+											ственных вин. Собранный фермерами виноград сортируется на различные классы качества для определения его последующего назначения, а также устанавливаются цены,
+											которые получают фермеры за свой урожай. Такой подход побуждает фермеров уделять особое внимание своим виноградникам и выгоден для обеих сторон.
+											В сочетании с современными методами виноделия и продуманным маркетингом, компания Araldica Castelvero предоставляет широкий спектр качественных и доступных в
+											ин, с успехом завоевавших как внутренние, так и международные рынки.
+										</p>
+										<hr>
+									</div> 			
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="alco-about text-center h-100 white-bordered">  
+									<div style="width:100%;height:2.5vh;"></div>
+									<hr>
+									<p style="font-size: 4.5vh"> <b>Описание</b></p>
+									<hr>
+									<div class="textbox swiper-no-swiping" style="overflow:hidden;overflow-y:scroll;height:80vh;padding:0 5% 5% 5%;text-align:justify;">
+										<p style="font-size: 3.5vh">
+											ОСОБЕННОСТИ
+											"Alasia" Barolo 2 — полнотелое красное сухое вино, созданное из винограда сорта Неббиоло.
+											Бароло обладает сложным ароматом, который сочетает в себе оттенки минералов, дерева, ванили и цветочные нюансы. 
+											Стойкий вкус вина завораживает элегантной шелковистой текстурой, оттенками специй, красных фруктов и долгим, гармоничным послевкусием.  
+											ОРГАНОЛЕПТИКА
+											Вино красно-гранатового цвета.Сложный аромат вина сочетает в себе оттенки минералов, дерева, ванили и цветочные нюансы.
+											Вино обладает стойким вкусом с элегантной шелковистой текстурой, оттенками специй, красных фруктов и долгим, гармоничным послевкусием.
+											СОЧЕТАЕМОСТЬ
+											Вино прекрасно сочетается с выдержанными сырами, красным мясом и дичью.
+											ЛЕГЕНДА
+											Araldica Castelvero— это крупнейший и наиболее прогрессивный кооператив Пьемонта, созданный в 1954 году и на данный момент насчитывающий около 300 членов. 
+											В основном это мелкие владельцы виноградников, которые почти на 1000 га площади выращивают местные белые сорта винограда — Москато и Кортезе, синий сорт 
+											Барбера и международные сорта — Мерло, Каберне Совиньон и Шардоне. Виноградники расположены в нескольких крупных областях Пьемонта, таких как Ланге,
+											Монферрато, Роэро и Гави.
+											ТЕРРУАР/ВИНОГРАДНИК
+											Кооперативу принадлежит винодельня Antica Contea di Сastelvero, самая старая часть которой была построена в 1954 году.
+											Выдержка вин тогда осуществлялась в цементных чанах. В 60-70 годах была проведена их полная замена на емкости из нержавеющей стали и дерева.
+											В 1972–1978 годах компания вкладывает крупные инвестиции в постройку большого погреба для выдержки вин в дубовых бочках общим объемом 15 000 гектолитров
+											. Здесь налаживается выдержка вин линейки "Barbera d'Asti", которая претендовала на почетное звание "лучшей" среди широкого ассортимента вин компании.
+											В 1999 году построен современный склад и завод по розливу вин Araldica. Продолжая свое расширение, компания в 1998 году приобретает поместье "Cascinone" 
+											(102 га земли), расположенное в муниципалитете Генуя, а также "Battistina", находящееся недалеко от города Гави. 
+											В каждой из них были построены собственные подвалы для винификации.
+											Несмотря на то, что компания Аральдика Кастельвероявляется кооперативом, благодаря Клаудио Манера — управляющему директору и энологу компании — здесь прису
+											тствуют "семейные традиции". Его отец, Ливио Манера, был первым виноделом кооператива в пятидесятых годах, а его жена Лелла работает виноделом компании и от
+											вечает за контроль качества выпускаемой продукции. Клаудио руководствуется принципом, что инвестиции в виноградники имеют решающее значение для создания каче
+											ственных вин. Собранный фермерами виноград сортируется на различные классы качества для определения его последующего назначения, а также устанавливаются цены,
+											которые получают фермеры за свой урожай. Такой подход побуждает фермеров уделять особое внимание своим виноградникам и выгоден для обеих сторон.
+											В сочетании с современными методами виноделия и продуманным маркетингом, компания Araldica Castelvero предоставляет широкий спектр качественных и доступных в
+											ин, с успехом завоевавших как внутренние, так и международные рынки.
+										</p>
+										<hr>
+									</div> 			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.touchSwipe.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+	<script src="static/js/bootstrap-slider.min.js"></script>
+	<script src="static/js/custom.js"></script>
+</html>

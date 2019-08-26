@@ -1,7 +1,10 @@
+// переменная для ползунка цены
 var Slider = $("input.slider").slider();
+// булевая переменная проверки фулскрина фотографии вина
 let imageFullscreen = false; 
+// список для корректной работы фильтра
 let selected = [];
-
+	// главный вертикальный свайпер
     var swiperH = new Swiper('.swiper-container-h', {
     	direction: 'vertical',
         pagination: '.swiper-pagination-h',
@@ -13,7 +16,8 @@ let selected = [];
 		longSwipesMs:50,
 		initialSlide:1,
 		centeredSlides: true,
-    });
+	});
+	// свайпер параметров вина
     var swiperV = new Swiper('.swiper-container-v', {
         direction: 'horizontal',
         nested: true,
@@ -30,7 +34,8 @@ let selected = [];
 			setTimeout(sync_slide, 1,this.activeIndex);
 		},
 		},
-    });
+	});
+	// свайпер описания вина
 	var swiperV_about = new Swiper('.swiper-container-v-about', {
 	direction: 'horizontal',
 	nested: true,
@@ -47,7 +52,8 @@ let selected = [];
 		    setTimeout(sync_slide, 1,this.activeIndex);
 	},
 	},
-    });
+	});
+	// свайпер каталога
 	var catalog_swiperV = new Swiper('.catalog-swiper-container-v', {
         pagination: '.swiper-pagination-v',
         paginationClickable: true,
@@ -96,7 +102,8 @@ let selected = [];
 			}
 	  },
         nested: true
-    });
+	});
+// ползунок цены
 $("#ex2").slider({});
 $("#ex2").slider();
 $("#ex2").on("slide", function(slideEvt) {
@@ -105,7 +112,7 @@ $("#ex2").on("slide", function(slideEvt) {
 $("#ex2").on("slide", function(slideEvt) {
 	$("#ex2SliderVal2").text(slideEvt.value[1]);
 });
-
+// скрытие лишних полей фильтрации при загрузке страницы
 $('#exampleFormControlSelect2').hide();
 $('#exampleFormControlSelect3').hide();
 $('#exampleFormControlSelect4').hide();
@@ -114,6 +121,8 @@ $('#exampleFormControlSelect6').hide();
 $('#exampleFormControlSelect7').hide();
 $('#exampleFormControlSelect8').hide();
 $('#exampleFormControlSelect9').hide();
+
+// синхронизация слайда параметров вина с его описанием при свайпе
 function sync_slide(new_slide){
 	if(swiperV.activeIndex != new_slide){
 		swiperV.slideTo(new_slide);
@@ -144,6 +153,7 @@ $(".alco-photo").click(function(){
         setTimeout(function(){imageFullscreen = false;}, 100);
     }
 });
+// Появление новых полей в фильтре
 $("#exampleFormControlSelect1").click(function(){
 	if (this.selectedIndex !=0 && selected[0] != this.selectedIndex){
 		$('#exampleFormControlSelect2').show();
