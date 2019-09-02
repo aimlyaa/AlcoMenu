@@ -1,3 +1,4 @@
+let clicked = false;
 // переменная для ползунка цены
 var Slider = $("input.slider").slider();
 // булевая переменная проверки фулскрина фотографии вина
@@ -21,7 +22,6 @@ let selected = [];
     var swiperV = new Swiper('.swiper-container-v', {
         direction: 'horizontal',
         nested: true,
-		loop: true,
 		effect: 'slide',
 		spaceBetween: 0,
 		grabCursor:true,
@@ -39,7 +39,6 @@ let selected = [];
 	var swiperV_about = new Swiper('.swiper-container-v-about', {
 	direction: 'horizontal',
 	nested: true,
-	loop: true,
 	effect: 'slide',
 	spaceBetween: 0,
 	grabCursor:true,
@@ -64,10 +63,13 @@ let selected = [];
 		slidesPerColumn: 2,
 		spaceBetween: 0,
 		centeredSlides: true,
-		initialSlide:1,
+		initialSlide:0,
 		on: {
 		click: function () {
-			sync_slide(this.clickedIndex);
+			if (!clicked){
+				clicked = true;
+				sync_slide(this.clickedIndex);
+			}
 			swiperH.slideTo(2);
 		},
 		},
@@ -124,6 +126,9 @@ $('#exampleFormControlSelect9').hide();
 
 // синхронизация слайда параметров вина с его описанием при свайпе
 function sync_slide(new_slide){
+	clicked = false;
+	console.log("clicked " + new_slide);
+	console.log("Showed " + swiperV.activeIndex);
 	if(swiperV.activeIndex != new_slide){
 		swiperV.slideTo(new_slide);
 	}
@@ -154,51 +159,27 @@ $(".alco-photo").click(function(){
     }
 });
 // Появление новых полей в фильтре
-$("#exampleFormControlSelect1").click(function(){
-	if (this.selectedIndex !=0 && selected[0] != this.selectedIndex){
+function go1(){
 		$('#exampleFormControlSelect2').show();
-	}
-	selected[0] = this.selectedIndex;
-});
-$("#exampleFormControlSelect2").click(function(){
-	if (this.selectedIndex !=0 && selected[1] != this.selectedIndex){
-		$('#exampleFormControlSelect3').show();
-	}
-	selected[1] = this.selectedIndex;
-});
-$("#exampleFormControlSelect3").click(function(){
-	if (this.selectedIndex !=0 && selected[2] != this.selectedIndex){
-		$('#exampleFormControlSelect4').show();
-	}
-	selected[2] = this.selectedIndex;
-});
-$("#exampleFormControlSelect4").click(function(){
-	if (this.selectedIndex !=0 && selected[3] != this.selectedIndex){
-		$('#exampleFormControlSelect5').show();
-	}
-	selected[3] = this.selectedIndex;
-});
-$("#exampleFormControlSelect5").click(function(){
-	if (this.selectedIndex !=0 && selected[4] != this.selectedIndex){
-		$('#exampleFormControlSelect6').show();
-	}
-	selected[4] = this.selectedIndex;
-});
-$("#exampleFormControlSelect6").click(function(){
-	if (this.selectedIndex !=0 && selected[5] != this.selectedIndex){
-		$('#exampleFormControlSelect7').show();
-	}
-	selected[5] = this.selectedIndex;
-});
-$("#exampleFormControlSelect7").click(function(){
-	if (this.selectedIndex !=0 && selected[6] != this.selectedIndex){
-		$('#exampleFormControlSelect8').show();
-	}
-	selected[6] = this.selectedIndex;
-});
-$("#exampleFormControlSelect8").click(function(){
-	if (this.selectedIndex !=0 && selected[7] != this.selectedIndex){
-		$('#exampleFormControlSelect9').show();
-	}
-	selected[7] = this.selectedIndex;
-});
+};
+function go2(){
+	$('#exampleFormControlSelect3').show();
+};
+function go3(){
+	$('#exampleFormControlSelect4').show();
+};
+function go4(){
+	$('#exampleFormControlSelect5').show();
+};
+function go5(){
+	$('#exampleFormControlSelect6').show();
+};
+function go6(){
+	$('#exampleFormControlSelect7').show();
+};
+function go7(){
+	$('#exampleFormControlSelect8').show();
+};
+function go8(){
+	$('#exampleFormControlSelect9').show();
+};
