@@ -10,52 +10,62 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="static/css/swiper.min.css">   
-    </head>
-	<body class="bg-white" style="height: 100vh;">
-		<!-- главный вертикальный слайдер -->
+	</head>
+	<!-- тело -->
+	<body class="bg-dark" style="height: 100vh;">
+		<!-- начало свайпера -->
 		<div class="swiper-container h-100 m-0 swiper-container-h">
-			<div class="swiper-wrapper m-0 white-bordered">
-				<!-- слайдер с фильтром -->
-				<div class="swiper-slide container w-100 h-100">
-					<!-- include static/templates/filter.html -->
-				</div>
-				<!-- слайдер с каталогом -->
-				<div class="swiper-slide">
-					<div class="catalog-swiper-container-v h-100 m-0 white-bordered">
-						<div class="swiper-wrapper">
-							<!--тут генерятся слайдеры-карточки товара -->
-							<div class="swiper-slide">
-								<!-- include static/templates/catalog.html -->
-							</div>
-						</div>
+			<!-- шапка -->
+			<div class="row w-100 m-0 top-menu">
+					<!-- кнопка фильтра -->
+					<div class="col-2 h-100">
+						<a class = "mt-0 p-0 d-flex align-items-center justify-content-center h-100" href="filter.html"><img class="h-50 m-0 p-0 text-left" src="static/media/index/filter.png"></a>
+					</div>
+					<!-- название вина в шапке -->
+					<div class="col-8 d-flex align-items-center justify-content-center h-100" style="overflow: hidden;">
+						<p class="text-light m-0" style="font-size: 2vh;">"Alasia" Barolo DOCG</p>
+					</div>
+					<!-- кнопка каталога -->
+					<div class="col-2 h-100">
+						<a class = "mt-0 p-0 d-flex align-items-center justify-content-center h-100" href="catalog.html"><img class="h-50 m-0 p-0 text-left" src="static/media/index/home.PNG"></a>
 					</div>
 				</div>
-				<!-- слайдер с параметрами каждого вина -->
+			<div class="swiper-wrapper m-0 white-bordered">
+				<!-- слайд, который содержит слайды параметр вин -->
 				<div class="swiper-slide">
 					<div class="swiper-container swiper-container-v">
+						<!-- Слайды с параметрами вин -->
 						<div class="swiper-wrapper">
-							<!-- тут генерится слайдер для конкретного вина -->
-							<div class="swiper-slide">
-								<!-- include static/templates/detail.html -->
-							</div>
+							<!-- include static/template/index.html -->
 						</div>
+						<!-- Кастомная кнопка навигации вниз -->
+						<div class="w-100 arrow-down d-flex align-items-center justify-content-center">
+								<img class="h-75 m-0 p-0" src="static/media/index/down.png">
+						</div>
+						<!-- навигация -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
-				<!-- слайдер с описанием каждого вина -->
+				<!-- слайд, который содержит описания вин -->
 				<div class="swiper-slide">
+					<!-- слайды с описанием вин -->
 					<div class="swiper-container h-100 swiper-container-v-about">
-						<div class="swiper-wrapper">
-							<!-- тут генерится слайдер с описанием конкретного вина-->
-							<div class="swiper-slide">
-								<!-- include static/templates/detail.html -->
-							</div>
+						<!-- Кастомная кнопка навигации вверх -->
+						<div class="w-100 arrow-up d-flex align-items-center justify-content-center">
+								<img class="h-75 m-0 p-0" src="static/media/index/up.PNG">
 						</div>
+						<div class="swiper-wrapper">
+							<!-- include static/templates/about.html -->
+						</div>
+						<!-- навигация -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</body>
-	<!-- js -->
+    </body>
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/popper.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>

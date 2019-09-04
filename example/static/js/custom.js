@@ -113,11 +113,9 @@ $(".alco-photo").click(function(){
         setTimeout(function(){imageFullscreen = false;}, 100);
     }
 });
-// стрелка вверх
 $(".arrow-up").click(function(){
     swiperH.slideTo(0);
 });
-// стрелка вниз
 $(".arrow-down").click(function(){
     swiperH.slideTo(1);
 });
@@ -131,7 +129,6 @@ function go2(){
 function go3(){
 	$('#exampleFormControlSelect4').show();
 };
-// переход к нужному вину из каталога
 $(".alco-card").click(function(){
-	window.location.replace("index.html#"+$(this).prop('id'));
+	window.location.replace("example.html#"+$(this).prop('id'));
 });

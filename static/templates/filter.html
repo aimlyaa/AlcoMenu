@@ -1,17 +1,12 @@
-<div class="row col-12 justify-content-center ml-0 pt-4 pb-0">
-    <div class="alco-about w-100">
-        <!-- Форма фильтрации -->
+<!-- форма фильтра -->
+<div class="row col-12 justify-content-center ml-0 pt-4 pb-0" style="margin-top:25vh;">
+    <div class="alco-about w-100 text-light">
         <form>
             <div class="form-group" style="font-size:3vh;margin-top:5vh;">
-                <!-- Выпадающий список цвета -->
-                <select class="form-control mb-1" style="font-size:3vh;" id="exampleFormControlSelect1">
-                    <option>Цвет</option>
-                    <option>Белое</option>
-                    <option>Красное</option>
-                    <option>Розовое</option>
-                </select>
+                <!-- поиск по названию -->
+                <input type="text" class="form-control mb-2" id="searchInput1" placeholder="Введите название вина">
+                <!-- Фильтр цены -->
                 <label for="exampleFormControlSelect1">Цена</label><br>
-                <!-- Ползунок цены -->
                 <label for="exampleFormControlSelect1" style="font-size:2vh; ">640 ₽  </label>
                 <input id="ex2" type="text" class="span2 swiper-no-swiping" style="width:45vw;" value="" data-slider-min="640" data-slider-max="32000" data-slider-step="50" data-slider-value="[640,32000]"/>
                 <label for="exampleFormControlSelect1" style="font-size:2vh;">   32000 ₽</label><br>
@@ -20,24 +15,23 @@
                     <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-1vh;">До: <span id="ex2SliderVal2">32000</span> ₽</span>
                 </div>
                 <br>
-                <!-- Выпадающий список типа вина -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect2">
+                <!-- Фильтр цвета -->
+                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect1" onchange="go1()">
+                    <option>Цвет</option>
+                    <option>Белое</option>
+                    <option>Красное</option>
+                    <option>Розовое</option>
+                </select>
+                <!-- Фильтр типа вина -->
+                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect2" onchange="go2()">
                     <option>Тип вина</option>
                     <option>Тихое</option>
                     <option>Игристое</option>
                     <option>Крепленое</option>
                     <option>Шипучее</option>
                 </select>
-                <!-- Выпадающий список сахара -->
+                <!-- Фильтр страны -->
                 <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect3">
-                    <option>Cахар</option>
-                    <option>Полусладкое</option>
-                    <option>Полусухое</option>
-                    <option>Сухое</option>
-                    <option>Игристое</option>
-                </select>
-                <!-- Выпадающий список страны -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect4">
                     <option>Страна</option>
                     <option>Австралия</option>
                     <option>Аргентина</option>
@@ -58,88 +52,9 @@
                     <option>Чили</option>
                     <option>ЮАР</option>
                 </select>
-                <!-- Выпадающий список виноградства -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect5">
-                    <option>Виноградство</option>
-                    <option>Биодинамика</option>
-                    <option>Органика</option>
-                    <option>Традиционное</option>
-                </select>
-                <!-- Выпадающий список региона -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect6">
-                    <option>Регион</option>
-                    <option>Абруццо</option>
-                    <option>Альто Адидже</option>
-                    <option>Базиликата</option>
-                    <option>Валле-Д'Аоста</option>
-                    <option>Верментино ди Сардиния</option>
-                    <option>Калабрия</option>
-                    <option>Кампания</option>
-                    <option>Лацио</option>
-                    <option>Лигурия</option>
-                    <option>Ломбардия</option>
-                    <option>Марке</option>
-                    <option>Пулия</option>
-                    <option>Пьемонт</option>
-                    <option>Сардиния</option>
-                    <option>Сицилия</option>
-                    <option>Тоскана</option>
-                    <option>Трентино-Альто-Адидже</option>
-                    <option>Умбрия</option>
-                    <option>Фриули</option>
-                    <option>Фриули-Венеция Джулия</option>
-                    <option>Эмилия-Романья</option>
-                </select>
-                <!-- Выпадающий список рейтингвых агенств -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect7">
-                    <option>Рейтинговые агенства</option>
-                    <option>A La Carte</option>
-                    <option>Antonio Galloni</option>
-                    <option>Bettane&amp;Desseauve</option>
-                    <option>Concours Mondial	1</option>
-                    <option>Concours Mondial</option>
-                    <option>Decanter World Wine Awards</option>
-                    <option>Decanter World Wine Awards</option>
-                    <option>Descorchados</option>
-                    <option>Falstaff</option>
-                    <option>Gault & Millau</option>
-                    <option>Gilbert & Gaillard</option>
-                    <option>Guía Peñín</option>
-                    <option>International Wine Challenge</option>
-                    <option>J.Robinson</option>
-                    <option>James Suckling</option>
-                    <option>Jamie Goode</option>
-                    <option>John Platter Guide</option>
-                    <option>L'espresso</option>
-                    <option>La Revue de Vin de France</option>
-                    <option>Robert Parker</option>
-                    <option>Tim Atkin</option>
-                    <option>Vinaria</option>
-                    <option>Vinous</option>
-                    <option>Vinum Wine Magazin</option>
-                    <option>Vivino</option>
-                    <option>Whisky Advocate</option>
-                    <option>Wine Advocate</option>
-                    <option>Wine Enthusaist</option>
-                    <option>Wine Spectator</option>
-                </select>
-                <!-- Выпадающий список рейтинга ресторана -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect8">
-                    <option>Рейтинг от ресторана</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                </select>
             </div>
-            <!-- Кнопка отправки данных с формы -->
-            <button class="btn btn-primary btn-filter" type="submit">Показать</button>
+            <!-- кнопка отправки -->
+            <button class="btn btn-light btn-filter" type="submit">Показать</button>
         </form>
     </div>
 </div>
