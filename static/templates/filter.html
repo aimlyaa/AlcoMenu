@@ -1,37 +1,33 @@
-<!-- форма фильтра -->
 <div class="row col-12 justify-content-center ml-0 pt-4 pb-0" style="margin-top:25vh;">
     <div class="alco-about w-100 text-light">
         <form>
             <div class="form-group" style="font-size:3vh;margin-top:5vh;">
-                <!-- поиск по названию -->
-                <input type="text" class="form-control mb-2" id="searchInput1" placeholder="Введите название вина">
-                <!-- Фильтр цены -->
-                <label for="exampleFormControlSelect1">Цена</label><br>
-                <label for="exampleFormControlSelect1" style="font-size:2vh; ">640 ₽  </label>
-                <input id="ex2" type="text" class="span2 swiper-no-swiping" style="width:45vw;" value="" data-slider-min="640" data-slider-max="32000" data-slider-step="50" data-slider-value="[640,32000]"/>
-                <label for="exampleFormControlSelect1" style="font-size:2vh;">   32000 ₽</label><br>
-                <div style="margin-top:-3vh;">
-                    <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-3vh;">От: <span id="ex2SliderVal">640</span> ₽</span>
-                    <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-1vh;">До: <span id="ex2SliderVal2">32000</span> ₽</span>
+                <input type="text" class="form-control mb-2 bg-dark" id="searchInput1" style="font-size:3vh;" placeholder="Введите название вина">
+                <div class="w-100 bg-dark border rounded mb-2">
+                    <label class="mt-3" for="exampleFormControlSelect1">Цена</label><br>
+                    <label for="exampleFormControlSelect1" style="font-size:2vh; ">640 ₽  </label>
+                    <input id="ex2" type="text" class="span2 swiper-no-swiping" style="width:45vw;" value="" data-slider-min="640" data-slider-max="32000" data-slider-step="50" data-slider-value="[640,32000]"/>
+                    <label for="exampleFormControlSelect1" style="font-size:2vh;">   32000 ₽</label><br>
+                    <div style="margin-top:-3vh;">
+                        <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-3vh;">От: <span id="ex2SliderVal">640</span> ₽</span>
+                        <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-1vh;">До: <span id="ex2SliderVal2">32000</span> ₽</span>
+                    </div>
+                    <br>
                 </div>
-                <br>
-                <!-- Фильтр цвета -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect1" onchange="go1()">
+                <select class="form-control mb-2 border bg-dark text-white" style="font-size:3vh;" id="exampleFormControlSelect1">
                     <option>Цвет</option>
                     <option>Белое</option>
                     <option>Красное</option>
                     <option>Розовое</option>
                 </select>
-                <!-- Фильтр типа вина -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect2" onchange="go2()">
+                <select class="form-control mb-2 border bg-dark text-white" style="font-size:3vh;" id="exampleFormControlSelect2">
                     <option>Тип вина</option>
                     <option>Тихое</option>
                     <option>Игристое</option>
                     <option>Крепленое</option>
                     <option>Шипучее</option>
                 </select>
-                <!-- Фильтр страны -->
-                <select class="form-control mb-2" style="font-size:3vh;" id="exampleFormControlSelect3">
+                <select class="form-control mb-2 border bg-dark text-white" style="font-size:3vh;" id="exampleFormControlSelect3">
                     <option>Страна</option>
                     <option>Австралия</option>
                     <option>Аргентина</option>
@@ -53,8 +49,7 @@
                     <option>ЮАР</option>
                 </select>
             </div>
-            <!-- кнопка отправки -->
-            <button class="btn btn-light btn-filter" type="submit">Показать</button>
+            <button class="btn btn-light btn-filter btn-dark border" type="submit">Показать</button>
         </form>
     </div>
 </div>

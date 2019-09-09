@@ -69,15 +69,6 @@ $("#ex2").on("slide", function(slideEvt) {
 $("#ex2").on("slide", function(slideEvt) {
 	$("#ex2SliderVal2").text(slideEvt.value[1]);
 });
-// скрытие лишних полей фильтрации при загрузке страницы
-$('#exampleFormControlSelect2').hide();
-$('#exampleFormControlSelect3').hide();
-$('#exampleFormControlSelect4').hide();
-$('#exampleFormControlSelect5').hide();
-$('#exampleFormControlSelect6').hide();
-$('#exampleFormControlSelect7').hide();
-$('#exampleFormControlSelect8').hide();
-$('#exampleFormControlSelect9').hide();
 
 // синхронизация слайда параметров вина с его описанием при свайпе
 function sync_slide(new_slide){
@@ -119,16 +110,7 @@ $(".arrow-up").click(function(){
 $(".arrow-down").click(function(){
     swiperH.slideTo(1);
 });
-// Появление новых полей в фильтре
-function go1(){
-		$('#exampleFormControlSelect2').show();
-};
-function go2(){
-	$('#exampleFormControlSelect3').show();
-};
-function go3(){
-	$('#exampleFormControlSelect4').show();
-};
+// переход к нужному вину из каталога
 $(".alco-card").click(function(){
 	window.location.replace("example.html#"+$(this).prop('id'));
 });
