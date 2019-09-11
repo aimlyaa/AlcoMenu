@@ -36,6 +36,7 @@ let selected = [];
 		on: {
 		slideChange: function () {
 			setTimeout(sync_slide, 1,this.activeIndex);
+			headerName();
 		},
 		},
 	});
@@ -56,7 +57,10 @@ let selected = [];
 	  },
 	on: {
 	slideChange: function () {
-		    setTimeout(sync_slide, 1,this.activeIndex);
+			setTimeout(sync_slide, 1,this.activeIndex);
+	},
+	init: function () {
+		headerName();
 	},
 	},
 	});
@@ -69,6 +73,11 @@ $("#ex2").on("slide", function(slideEvt) {
 $("#ex2").on("slide", function(slideEvt) {
 	$("#ex2SliderVal2").text(slideEvt.value[1]);
 });
+
+function headerName(){
+	var wineName = $('#'+"name"+ swiperV.activeIndex.toString(10)).text();
+	$('#headerName').html( wineName );
+};
 
 // синхронизация слайда параметров вина с его описанием при свайпе
 function sync_slide(new_slide){
