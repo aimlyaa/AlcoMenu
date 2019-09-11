@@ -36,7 +36,7 @@ let selected = [];
 		on: {
 		slideChange: function () {
 			setTimeout(sync_slide, 1,this.activeIndex);
-			headerName();
+			setTimeout(headerName, 1);
 		},
 		},
 	});
@@ -60,7 +60,7 @@ let selected = [];
 			setTimeout(sync_slide, 1,this.activeIndex);
 	},
 	init: function () {
-		headerName();
+		setTimeout(headerName, 1);
 	},
 	},
 	});
