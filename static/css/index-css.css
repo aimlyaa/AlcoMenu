@@ -3,9 +3,14 @@
 .form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
-/* убираем скроллбар */
+
+
+/* убираем скроллбар */ 
 ::-webkit-scrollbar { 
 	display: none;
+}
+.body-mobile{
+    height: calc(var(--vh, 1vh) * 100);
 }
 /* весь курсив другим шрифтом */
 i{
@@ -15,76 +20,16 @@ i{
 body{
 	font-family: 'Open Sans', sans-serif;
 }
-/* дефолт для каждого слайдера */
-.white-bordered{
-	background:#faf9f7;
-	box-shadow:0px 0px 0px 5px white inset;
-}
-/* Параметры вина */
-.alco-par{ 
-	text-align: center;
-	background:#fff;
-	color:#082948;
-    display: block;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-}
-/* Описание вина */
-.alco-about{
-    -webkit-overflow-scrolling: touch;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	color:#082948;
-    display: block;
-    overflow: hidden;
-}
-/* Специальный hr для описания */
-.alco-about hr{
-	width:90%;
-	background:#a18a72;
-}
 /* Кнопка на форме фильтрации */
-.btn-filter{
-	font-size:4vh;
-}
+
 /* Стиль для цены */
-.price {
-	margin-top:-1vh;
-	text-align:center;
-	font-size: 4vh;
-	width:100%;
-	margin-bottom:0;
-}
+
 /* Специальный hr для параметров вина*/
-.alco-par hr{
-	width:90%;
-	background:#a18a72;
-}
-
-/* Фото продукта */
-.alco-photo{ 
-    align-items: center;
-    background: #ffffff;
-    display: flex;
-    float: left;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: 101%;
-}
-
-.alco-photo img{
-    max-width:100%;
-    height:100%;
-    object-fit: contain; 
-}
 
 /* слайд каталога */
 .swiper-container-v{
 	overflow: hidden;
     background: #343a40;
-    height: 100vh;
 }
 .swiper-slide {
     background: #343a40;
@@ -108,21 +53,18 @@ body{
 .arrow-down{
     margin-top:-2.5vh;
     height: 2.5vh; 
-    width: 5em; 
     z-index: 9999; 
     position: absolute;
 }
 /* стрелка вверх */
 .arrow-up{
-    margin-top:7vh;
     height: 2.5vh; 
-    width: 5em; 
     z-index: 9999; 
     position: absolute;
 }
 /* верхнее главное меню */
 .top-menu{
-    height: 7vh;
+    height: 4.5rem;
     background: #3f474e;
     position: absolute;
     z-index: 9999; 

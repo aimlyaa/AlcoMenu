@@ -1,3 +1,9 @@
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
 let clicked = false;
 // переменная для ползунка цены
 var Slider = $("input.slider").slider();
@@ -121,5 +127,5 @@ $(".arrow-down").click(function(){
 });
 // переход к нужному вину из каталога
 $(".alco-card").click(function(){
-	window.location.replace("index.html#"+$(this).prop('id'));
+	window.location.replace("example.html#"+$(this).prop('id'));
 });

@@ -1,91 +1,83 @@
 <!-- карточка описания конкретного вина -->
 <!-- data-hash должен быть уникален и соответствовать id в каталоге -->
-<div class="swiper-slide bg-dark" data-hash="0">
-    <container>
-        <div class="row border fk-bootstrap" style="width:90vw; margin:9.5vh 0 5vw 5vw; border-radius: 25px; overflow:hidden;">
-            <div class="col-5 p-0 h-100">
-                <div class="alco-photo m-0 h-100">
-                    <img src="static/media/wines/001.jpg">
+<div class="swiper-slide bg-dark pt-5" data-hash="0">
+    <section class="pt-5 pl-5 pr-5 pb-4 h-100">
+        <div class="col-12 border h-100 bg-white" style="border-radius: 25px; overflow: hidden;">
+            <div class="row h-100">
+                <div class="col-5 h-100 pt-2 pb-2 d-flex justify-content-center">
+                    <img class="h-100 w-auto" src="static/media/wines/001.jpg">
+                </div>
+                <div class="col-7 h-100 pt-4 text-center">
+                    <p class="mb-0" style="font-size: 1rem; color:#a6a4b0;">Артикул: 11</p>
+                    <!-- id="name0" должно генериться как name1 name2 и т.д. Это нужно для отображения названия вина в шапке -->
+                    <p class="mb-0" style="font-size: 1.5rem;" id="name0"> <b>"Alasia" Barolo DOCG</b></p>
+                    <p style="font-size: 1rem; color:#a6a4b0;">"Алазия" Бароло</p>
+                    <hr class="mb-1">
+                    <p class="text-left mb-0" style="font-size: 1.1rem;"><img src="static/media/index/where.png"> Италия <i>0.75</i> л</p>
+                    <p class="text-left mb-0" style="font-size: 1.1rem; color:#dc6c75;"><img src="static/media/index/wine.png"> КРАСНОЕ СУХОЕ</p>
+                    <hr class="mt-1">
+                    <div class="row">
+                        <div class="col-3 text-left m-auto">
+                            <p style="font-size:1.2rem;"><b>Вино:</b></p>
+                        </div>
+                        <div class="col text-right mt-auto mb-auto mr-4">
+                            <p style="font-size:1.1rem;">Красное - сухое</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 text-left m-auto">
+                            <p style="font-size:1.1rem;"><b>Тип вина:</b></p>
+                        </div>
+                        <div class="col text-right mt-auto mb-auto mr-4">
+                            <p style="font-size:1.1rem;">Тихое</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-left m-auto">
+                            <p style="font-size:1.1rem;"><b>Регион:</b></p>
+                        </div>
+                        <div class="col text-right mt-auto mb-auto mr-4">
+                            <p style="font-size:1.1rem;">Пьемонт - Италия</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-left m-auto">
+                            <p style="font-size:1.1rem;"><b>Производитель:</b></p>
+                        </div>
+                        <div class="col text-right mt-auto mb-auto mr-4">
+                            <p style="font-size:1.1rem;">Araldica Castelvero</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-left m-auto">
+                            <p style="font-size:1.1rem;"><b>Состав:</b></p>
+                        </div>
+                        <div class="col text-right mt-auto mb-auto mr-4">
+                            <p style="font-size:1.1rem;">Неббиоло</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-left m-auto">
+                            <p style="font-size:1.1rem;"><b>Производство:</b></p>
+                        </div>
+                        <div class="col text-right mt-auto mb-auto mr-4">
+                            <p style="font-size:1.1rem;">Традиционное</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9 text-left mb-auto mt-auto ml-0 pr-0 mr-0">
+                            <p style="font-size:1.1rem;"><b>Содержание алкоголя:</b></p>
+                        </div>
+                        <div class="col-2 text-right mt-auto mb-auto mr-4 pl-0">
+                            <p style="font-size:1.1rem;">14%</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row pl-4 pr-4">
+                        <p class="w-100 text-center" style="font-size: 3rem;"><i>2950 ₽ </i></p>	
+                    </div>
                 </div>
             </div>
-            <div class="col-7 p-0 h-100">
-                <div class="alco-par text-center m-0 pt-4 white-bordered">
-                    <container>
-                        <div class="row pl-4 pr-4">
-                            <div class="col-12 pl-5">
-                                <p style="font-size: 1rem; color:#a6a4b0;">Артикул: 11</p>
-                                <!-- добавил id в поле с именем -->
-                                <p style="font-size: 1.5rem;" id="name0"> <b>"Alasia" Barolo DOCG</b></p>
-                                <p style="font-size: 1rem; color:#a6a4b0;">"Алазия" Бароло</p>
-                                <hr>
-                                <p class="text-left mb-0" style="font-size: 1.1rem;"><img src="static/media/index/where.png"> Италия <i>0.75</i> л</p>
-                                <p class="text-left mb-0" style="font-size: 1.1rem; color:#dc6c75;"><img src="static/media/index/wine.png"> КРАСНОЕ СУХОЕ</p>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-3 text-left m-auto">
-                                        <p style="font-size:1.2rem;"><b>Вино:</b></p>
-                                    </div>
-                                    <div class="col text-right mt-auto mb-auto mr-4">
-                                        <p style="font-size:1.1rem;">Красное - сухое</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-5 text-left m-auto">
-                                        <p style="font-size:1.1rem;"><b>Тип вина:</b></p>
-                                    </div>
-                                    <div class="col text-right mt-auto mb-auto mr-4">
-                                        <p style="font-size:1.1rem;">Тихое</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4 text-left m-auto">
-                                        <p style="font-size:1.1rem;"><b>Регион:</b></p>
-                                    </div>
-                                    <div class="col text-right mt-auto mb-auto mr-4">
-                                        <p style="font-size:1.1rem;">Пьемонт - Италия</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 text-left m-auto">
-                                        <p style="font-size:1.1rem;"><b>Производитель:</b></p>
-                                    </div>
-                                    <div class="col text-right mt-auto mb-auto mr-4">
-                                        <p style="font-size:1.1rem;">Araldica Castelvero</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-3 text-left m-auto">
-                                        <p style="font-size:1.1rem;"><b>Состав:</b></p>
-                                    </div>
-                                    <div class="col text-right mt-auto mb-auto mr-4">
-                                        <p style="font-size:1.1rem;">Неббиоло</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4 text-left m-auto">
-                                        <p style="font-size:1.1rem;"><b>Производство:</b></p>
-                                    </div>
-                                    <div class="col text-right mt-auto mb-auto mr-4">
-                                        <p style="font-size:1.1rem;">Традиционное</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-9 text-left mb-auto mt-auto ml-0 pr-0 mr-0">
-                                        <p style="font-size:1.1rem;"><b>Содержание алкоголя:</b></p>
-                                    </div>
-                                    <div class="col-2 text-right mt-auto mb-auto mr-4 pl-0">
-                                        <p style="font-size:1.1rem;">14%</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row pl-4 pr-4">
-                                    <p class="price"><i>2950 ₽ </i></p>	
-                                </div>
-                            </div>
-                        </div>
-                    </container>
-                </div> 			
-            </div>
         </div>
-    </container>
+    </section>
 </div>

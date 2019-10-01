@@ -10,35 +10,34 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="static/css/swiper.min.css">   
-	</head>
-	<!-- тело -->
-	<body class="bg-dark" style="height: 100vh;">
-		<!-- начало свайпера -->
+    </head>
+    <body class="bg-dark body-mobile">
+		<!-- шапка -->
 		<div class="swiper-container h-100 m-0 swiper-container-h">
-			<!-- шапка -->
 			<div class="row w-100 m-0 top-menu">
 					<!-- кнопка фильтра -->
 					<div class="col-2 h-100">
 						<a class = "mt-0 p-0 d-flex align-items-center justify-content-center h-100" href="filter.html"><img class="h-50 m-0 p-0 text-left" src="static/media/index/filter.png"></a>
 					</div>
-					<!-- название вина в шапке -->
+					<!-- Название вина в шапке -->
 					<div class="col-8 d-flex align-items-center justify-content-center h-100" style="overflow: hidden;">
-						<p class="text-light m-0" style="font-size: 2vh;" id="headerName"></p>
+						<p class="text-light m-0 text-center" style="font-size: 1.2rem;" id="headerName"></p>
 					</div>
 					<!-- кнопка каталога -->
 					<div class="col-2 h-100">
 						<a class = "mt-0 p-0 d-flex align-items-center justify-content-center h-100" href="catalog.html"><img class="h-50 m-0 p-0 text-left" src="static/media/index/home.PNG"></a>
 					</div>
 				</div>
+			<!-- слайдеры -->
 			<div class="swiper-wrapper m-0 white-bordered">
-				<!-- слайд, который содержит слайды параметр вин -->
+				<!-- слайдер со слайдерами карточек вин -->
 				<div class="swiper-slide">
-					<div class="swiper-container swiper-container-v">
-						<!-- Слайды с параметрами вин -->
+					<div class="swiper-container swiper-container-v h-100">
+						<!-- винные карточки -->
 						<div class="swiper-wrapper">
-							<!-- include static/template/index.html -->
+							<!-- include static/templates/index.html -->
 						</div>
-						<!-- Кастомная кнопка навигации вниз -->
+						<!-- стрелка вниз -->
 						<div class="w-100 arrow-down d-flex align-items-center justify-content-center">
 								<img class="h-75 m-0 p-0" src="static/media/index/down.png">
 						</div>
@@ -47,16 +46,16 @@
 						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
-				<!-- слайд, который содержит описания вин -->
+				<!-- Слайдер со слайдерами описания вин -->
 				<div class="swiper-slide">
-					<!-- слайды с описанием вин -->
 					<div class="swiper-container h-100 swiper-container-v-about">
-						<!-- Кастомная кнопка навигации вверх -->
-						<div class="w-100 arrow-up d-flex align-items-center justify-content-center">
-								<img class="h-75 m-0 p-0" src="static/media/index/up.PNG">
+						<!-- стрелка вверх -->
+						<div class="w-100 arrow-up mt-5 d-flex align-items-center justify-content-center">
+							<img class="h-75 m-0 p-0 mt-5" src="static/media/index/up.PNG">
 						</div>
+						<!-- Слайдеры с описанием -->
 						<div class="swiper-wrapper">
-							<!-- include static/templates/about.html -->
+							<!-- include static/tamplates/about.html -->
 						</div>
 						<!-- навигация -->
 						<div class="swiper-button-next"></div>

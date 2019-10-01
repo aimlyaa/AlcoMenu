@@ -23,19 +23,23 @@
                 <a class = "mt-0 p-0 d-flex align-items-center justify-content-center h-100" href="catalog.html"><img class="h-50 m-0 p-0 text-left" src="static/media/index/home.PNG"></a>
             </div>
         </div>
-        <div class="row col-12 justify-content-center ml-0 pt-4 pb-0" style="margin-top:25vh;">
-            <div class="alco-about w-100 text-light">
+        <div class="col-12 d-flex justify-content-center ml-0 pt-4 pb-0" style="margin-top:25vh;">
+            <div class="w-100 text-light">
                 <form>
                     <div class="form-group" style="font-size:3vh;margin-top:5vh;">
                         <input type="text" class="form-control mb-2 bg-dark text-white" id="searchInput1" style="font-size:3vh;" placeholder="Введите название вина">
                         <div class="w-100 bg-dark border rounded mb-2">
-                            <label class="mt-3" for="exampleFormControlSelect1">Цена</label><br>
-                            <label for="exampleFormControlSelect1" style="font-size:2vh; ">640 ₽  </label>
-                            <input id="ex2" type="text" class="span2 swiper-no-swiping" style="width:45vw;" value="" data-slider-min="640" data-slider-max="32000" data-slider-step="50" data-slider-value="[640,32000]"/>
-                            <label for="exampleFormControlSelect1" style="font-size:2vh;">   32000 ₽</label><br>
-                            <div style="margin-top:-3vh;">
-                                <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-3vh;">От: <span id="ex2SliderVal">640</span> ₽</span>
-                                <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-1vh;">До: <span id="ex2SliderVal2">32000</span> ₽</span>
+                            <div class="row w-100 m-0 d-flex justify-content-center">
+                                <label class="mt-3" for="exampleFormControlSelect1">Цена</label><br>
+                            </div>
+                            <div class="row w-100 m-0 d-flex justify-content-center align-items-center">
+                                <label for="exampleFormControlSelect1" style="font-size:2vh; ">640 ₽   </label>
+                                <input id="ex2" type="text" class="span2 swiper-no-swiping" style="width:45vw;" value="" data-slider-min="640" data-slider-max="32000" data-slider-step="50" data-slider-value="[640,32000]"/>
+                                <label for="exampleFormControlSelect1" style="font-size:2vh;">    32000 ₽</label><br>
+                            </div>
+                            <div class="row w-100 m-0 d-flex justify-content-center">
+                                <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-1vh;">От: <span id="ex2SliderVal">640</span> ₽      </span>
+                                <span id="ex6CurrentSliderValLabel" style="font-size:2vh; margin-top:-1vh;"> До: <span id="ex2SliderVal2">32000</span> ₽</span>
                             </div>
                             <br>
                         </div>
@@ -74,7 +78,9 @@
                             <option>ЮАР</option>
                         </select>
                     </div>
-                    <button class="btn btn-light btn-filter btn-dark border" type="submit">Показать</button>
+                    <div class="row w-100 d-flex justify-content-center">
+                        <button class="btn btn-light btn-filter btn-dark border" style="font-size: 4vh;" type="submit">Показать</button>
+                    </div>
                 </form>
             </div>
         </div>
