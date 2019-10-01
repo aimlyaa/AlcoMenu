@@ -3,6 +3,25 @@
 .form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+
+
+@media only screen and (min-width: 0px) {
+    .fk-bootstrap{
+        height: 899px;
+    }
+    .fk-bootstrap-2{
+        height: 800px;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .fk-bootstrap{
+        height: 673px;
+    }
+    .fk-bootstrap-2{
+        height: 588px;
+    }
+}
+
 /* убираем скроллбар */ 
 ::-webkit-scrollbar { 
 	display: none;
