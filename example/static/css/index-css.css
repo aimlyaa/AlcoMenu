@@ -53,19 +53,16 @@ body{
 .arrow-down{
     margin-top:-2.5vh;
     height: 2.5vh; 
-    z-index: 9999; 
-    position: absolute;
+    z-index: 9999;
 }
 /* стрелка вверх */
 .arrow-up{
     height: 2.5vh; 
-    z-index: 9999; 
-    position: absolute;
+    z-index: 9999;
 }
 /* верхнее главное меню */
 .top-menu{
     height: 4.5rem;
     background: #3f474e;
-    position: absolute;
     z-index: 9999; 
 }
