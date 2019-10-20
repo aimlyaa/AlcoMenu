@@ -2,7 +2,8 @@
 <html lang="ru">
     <head>
         <title>Upwine Алкоменю</title>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta name="mobile-web-app-capable" content="yes">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="static/css/bootstrap.min.css">
         <link rel="stylesheet" href="static/css/index-css.css">
@@ -11,53 +12,40 @@
 		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="static/css/swiper.min.css">   
     </head>
-    <body class="bg-dark body-mobile">
-		<!-- шапка -->
+    <body class="bg-dark">
 		<div class="swiper-container h-100 m-0 swiper-container-h">
 			<div class="row w-100 m-0 top-menu position-absolute">
-					<!-- кнопка фильтра -->
 					<div class="col-2 h-100">
 						<a class = "mt-0 p-0 d-flex align-items-center justify-content-center h-100" href="filter.html"><img class="h-50 m-0 p-0 text-left" src="static/media/index/filter.png"></a>
 					</div>
-					<!-- Название вина в шапке -->
 					<div class="col-8 d-flex align-items-center justify-content-center h-100" style="overflow: hidden;">
 						<p class="text-light m-0 text-center" style="font-size: 1.2rem;" id="headerName"></p>
 					</div>
-					<!-- кнопка каталога -->
 					<div class="col-2 h-100">
 						<a class = "mt-0 p-0 d-flex align-items-center justify-content-center h-100" href="catalog.html"><img class="h-50 m-0 p-0 text-left" src="static/media/index/home.PNG"></a>
 					</div>
 				</div>
-			<!-- слайдеры -->
-			<div class="swiper-wrapper m-0 white-bordered">
-				<!-- слайдер со слайдерами карточек вин -->
+			<div class="swiper-wrapper m-0 white-bordered" style="height:100vh;">
 				<div class="swiper-slide">
-					<div class="swiper-container swiper-container-v h-100">
-						<!-- винные карточки -->
+					<div class="swiper-container swiper-container-v adaptive-card">
 						<div class="swiper-wrapper">
-							<!-- include static/templates/index.html -->
+							<!-- include static/tamplates/index.html -->
 						</div>
-						<!-- стрелка вниз -->
 						<div class="w-100 arrow-down d-flex align-items-center justify-content-center position-absolute">
 								<img class="h-75 m-0 p-0" src="static/media/index/down.png">
 						</div>
-						<!-- навигация -->
 						<div class="swiper-button-next"></div>
 						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
-				<!-- Слайдер со слайдерами описания вин -->
 				<div class="swiper-slide">
 					<div class="swiper-container h-100 swiper-container-v-about">
-						<!-- стрелка вверх -->
 						<div class="w-100 arrow-up mt-5 d-flex align-items-center justify-content-center position-absolute">
-							<img class="h-75 m-0 p-0 mt-5" src="static/media/index/up.PNG">
+								<img class="h-75 m-0 p-0 mt-5" src="static/media/index/up.PNG">
 						</div>
-						<!-- Слайдеры с описанием -->
 						<div class="swiper-wrapper">
 							<!-- include static/tamplates/about.html -->
 						</div>
-						<!-- навигация -->
 						<div class="swiper-button-next"></div>
 						<div class="swiper-button-prev"></div>
 					</div>

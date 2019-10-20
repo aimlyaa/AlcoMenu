@@ -1,3 +1,4 @@
+/* 1 */
 .form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
 .form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
@@ -9,8 +10,28 @@
 ::-webkit-scrollbar { 
 	display: none;
 }
-.body-mobile{
-    height: calc(var(--vh, 1vh) * 100);
+
+@media only screen and (min-width: 0px) {
+    .adaptive-card{
+        height: 805px;
+    }
+    .adaptive-about{
+        height: 750px;
+    }
+    .adaptive-info{
+        display: inline;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .adaptive-card{
+        height: 440px;
+    }
+    .adaptive-about{
+        height: 395px;
+    }
+    .adaptive-info{
+        display: none;
+    }
 }
 /* весь курсив другим шрифтом */
 i{
