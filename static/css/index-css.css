@@ -13,10 +13,10 @@
 
 @media only screen and (min-width: 0px) {
     .adaptive-card{
-        height: 805px;
+        height: 900px;
     }
     .adaptive-about{
-        height: 750px;
+        height: 845px;
     }
     .adaptive-info{
         display: inline;
@@ -24,10 +24,10 @@
 }
 @media only screen and (min-width: 700px) {
     .adaptive-card{
-        height: 440px;
+        height: 535px;
     }
     .adaptive-about{
-        height: 395px;
+        height: 490px;
     }
     .adaptive-info{
         display: none;
